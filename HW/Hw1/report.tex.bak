@@ -1,0 +1,56 @@
+\documentclass{winnower}
+\usepackage{indentfirst}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{subfigure}
+\usepackage{xcolor}
+\usepackage{float}
+\usepackage[section]{placeins}
+\usepackage{multirow}
+\usepackage{booktabs}
+\setlength{\belowcaptionskip}{-0.5cm}
+
+\begin{document}
+
+\title{Homework3 report}
+
+\author{Haoyu Guan}
+
+\affil[1]{Questrom School of Business, Boston University}
+
+
+
+
+
+
+
+\date{2020.02.11}
+
+\maketitle
+
+
+
+
+%-------------------------------------------------%
+\section{Problem Backgroud}
+%-------------------------------------------------%
+
+
+\indent \textbf{Option Pricing via FFT Techniques The Heston Model is defined by the following system of stochastic differential equations:}
+$$dS_t=rS_tdt+\sqrt{\nu_t}S_tdW_t^1$$
+$$d\nu_t=\kappa(\theta-\nu_t)dt+\sigma\sqrt{\nu_t}dW_t^2$$
+$$Cov(dW_t^1,dW_t^2)=\rho dt$$
+
+\textbf{The characteristic function for the Heston Model is known to be:}
+
+$$\omega(u)=\dfrac{exp(iu\ln{S_0}+iu(r-q)t+\dfrac{\kappa\theta t(\kappa-i\rho\sigma u)}{\sigma^2})}{(\cosh{\dfrac{\lambda t}{2}}+\dfrac{\kappa-i\rho\sigma u}{\lambda}\sinh{\dfrac{\lambda t}{2}})^{\frac{2\kappa\theta}{\sigma^2}}}$$
+$$\Phi(u)=\omega(u)\exp{(\dfrac{-(u^2+iu)\nu_0}{\lambda\coth{\frac{\lambda t}{2}}+\kappa-i\rho\sigma u})}$$
+$$\lambda=\sqrt{\sigma^2(u^2+iu)+(\kappa-i\rho\sigma u)^2}$$
+
+\textbf{Assume the risk-free rate is 2$\%$, the initial asset price is 250 and that the asset pays no dividends}
+
+\section{Problem Detail}
+
+
+
+\end{document}
